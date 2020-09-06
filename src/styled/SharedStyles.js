@@ -102,7 +102,6 @@ export const PageContainer = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
-  // background-color: #e3f2fd;
   font-family: "Open Sans", sans-serif;
 `;
 
@@ -113,52 +112,57 @@ export const Page = styled.div`
   top: 0;
   left: 0;
   text-align: center;
+  h1,
   h2 {
-    color: #0d47a1;
+    color: #efeeee;
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 2rem;
+    margin-bottom: 0;
+    display: inline-block;
+    text-shadow: 1px 1px darkslateblue;
   }
-  p {
-    font-size: 1rem;
-    max-width: 400px;
-    margin: 20px auto;
-    color: #37474f;
+  h3 {
+    color: #efeeee;
+    font-size: 0.7rem;
+    margin-bottom: 1vh;
+    text-shadow: 1px 1px darkslateblue;
   }
   a {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 0.8rem;
     padding: 10px 20px;
-    border: 1px solid #4776e6;
     border-radius: 5px;
-    background-image: linear-gradient(
-      to right,
-      #4776e6 0%,
-      #8e54e9 51%,
-      #4776e6 100%
-    );
+    background: linear-gradient(to right, #151c5e, #311a5d, #151c5e);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   }
-
-  img {
-    border-radius: 50%;
+  a span {
+    cursor: pointer;
+    &:hover {
+      color: aquamarine;
+    }
   }
-`;
-
-export const HomePageElm = styled(Page)`
-  background-image: url(${(props) => props.img});
-  background-size: cover;
-  &.page-enter {
-    animation: ${slideInTop} 0.5s forwards;
-  }
-  &.page-exit {
-    animation: ${slideOutTop} 0.5s forwards;
+  hr {
+    margin: 0.5vw 7vw 2vw 7vw;
+    padding: 0.3vw;
+    background: linear-gradient(transparent, whitesmoke, transparent);
+    border: 0.5px solid darkslateblue;
+    border-width: 0 0.5px 0.5px 0;
+    border-radius: 5px;
   }
 `;
 
-export const TimerPageElm = styled(Page)`
-  background-color: #90caf9;
-  &.page-enter {
-    animation: ${slideInBottom} 0.5s forwards;
-  }
-  &.page-exit {
-    animation: ${slideOutBottom} 0.5s forwards;
-  }
+export const Button = styled.button`
+  color: white;
+  background: url(${(props) => props.img}) no-repeat center;
+  background-color: ${(props) => props.colour};
+  border-radius: 10px;
+  padding: 1vh 0.5vh;
+  font-weight: bold;
+  font-size: 0.7rem;
+  outline: none;
+  cursor: pointer;
 `;

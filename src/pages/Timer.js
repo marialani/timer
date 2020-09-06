@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import { RouteDirectionContext } from "../store/AppProvider";
 import Watch from "../components/Watch";
-import { TimerPageElm } from "../styled/Lib";
-import { Link } from "react-router-dom";
+import { TimerPageElm } from "../styled/TimerPageStyles";
+import SidePanel from "../components/SidePanel";
 
 const Timer = () => {
+  const { direction } = useContext(RouteDirectionContext);
+
   return (
-    <TimerPageElm>
+    <TimerPageElm direction={direction}>
+      <SidePanel />
       <Watch />
-      <Link to="/">Go to Page one →</Link>
     </TimerPageElm>
   );
 };

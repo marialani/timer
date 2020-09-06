@@ -1,29 +1,14 @@
 import React from "react";
-import { HomePageElm } from "../styled/Lib";
-import { Link } from "react-router-dom";
+import { HomePageElm } from "../styled/HomePageStyles";
 import Lights from "../components/Lights";
-import HomeBkg from "../img/home-bkg.jpg";
+import HomeText from "../components/HomeText";
 
 const Homepage = () => {
-  // }, [])
-
   return (
     <>
-      <HomePageElm img={HomeBkg}>
+      <HomePageElm img="https://res.cloudinary.com/dmwyuc3gd/image/upload/dpr_auto,f_auto,q_auto/v1599316281/react%20timer/home-bkg_nxztax.jpg">
         <Lights />
-        <div
-          style={{
-            position: "absolute",
-            zIndex: "1",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <h1>React Timer</h1>
-          <Link to="/details">Go to Page Two →</Link>
-        </div>
-        {/* </Lights> */}
+        <HomeText />
       </HomePageElm>
     </>
   );
