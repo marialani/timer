@@ -78,7 +78,7 @@ const WatchHeader = () => {
           </Span>
           {date && date[1] + " " + date[2]}
         </HeaderDiv>
-        <HeaderDiv size="3vw" weight="bold">
+        <HeaderDiv size="3vw" weight="bold" family="Liberation">
           {time && time}
         </HeaderDiv>
       </div>

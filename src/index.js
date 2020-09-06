@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./assets/fonts/DS-DIGIB.TTF";
+import "./assets/fonts/Liberation.ttf";
+import "./assets/fonts/Digitaldream.ttf";
 import "./index.css";
 import App from "./App";
 

@@ -131,7 +131,13 @@ const CountDown = () => {
       <Input
         type="time"
         step="1"
-        defaultValue={"00:00:00"}
+        value={
+          formatTime(countdown.hours) +
+          ":" +
+          formatTime(countdown.minutes) +
+          ":" +
+          formatTime(countdown.seconds)
+        }
         onChange={handleTimeChange}
       />
       <audio className="audio-element">
