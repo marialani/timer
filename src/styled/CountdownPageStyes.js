@@ -50,6 +50,7 @@ export const Input = styled.input`
   background: rgba(213, 120, 5, 0.13);
   border: 0.5px solid black;
   color: snow;
+  text-align: center;
 `;
 
 export const Container = styled.div`
