@@ -1,7 +1,14 @@
 /* fonts */
 @font-face {
-  font-family: "Digital";
-  src: local("Digital"), url(./assets/fonts/DS-DIGIB.TTF) format("truetype");
+  font-family: "Liberation";
+  src: local("Liberation"),
+    url(./assets/fonts/Liberation.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Digitaldream";
+  src: local("Digitaldream"),
+    url(./assets/fonts/Digitaldream.ttf) format("truetype");
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Average+Sans&display=swap");

@@ -147,13 +147,14 @@ export const LapTimesDiv = styled.div`
 `;
 
 export const WatchDisplay = styled.div`
-  font-size: 6vw;
-  font-family: Digital;
+  font-size: 4vw;
+  font-family: Digitaldream;
 `;
 
 export const HeaderDiv = styled.div`
   font-size: ${(props) => props.size};
   font-weight: ${(props) => props.weight};
+  font-family: ${(props) => props.family};
 `;
 
 export const Span = styled.span`

@@ -146,7 +146,7 @@ export const Page = styled.div`
     }
   }
   hr {
-    margin: 0.5vw 7vw 2vw 7vw;
+    margin: 0.5vw 20% 2vw 20%;
     padding: 0.3vw;
     background: linear-gradient(transparent, whitesmoke, transparent);
     border: 0.5px solid darkslateblue;

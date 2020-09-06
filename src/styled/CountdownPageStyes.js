@@ -29,6 +29,8 @@ export const Clock = styled.div`
   border-radius: 30px;
   box-shadow: 10px -20px gray, 10px -5px gray, -1px -5px gray;
   margin: auto;
+  display: flex;
+  justify-content: center;
 `;
 
 export const Nav = styled.div`
@@ -54,15 +56,20 @@ export const Container = styled.div`
   margin-bottom: auto;
   padding-bottom: 15vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const H3 = styled.h3`
   display: inline-block;
   margin: 1vw 2vw;
+  font-size: 1.2rem !important;
 `;
 
 export const ClockDisplay = styled.div`
-  font-size: 8vw;
-  font-family: Digital;
+  font-size: 6vw;
+  font-family: Digitaldream;
   color: red;
 `;
